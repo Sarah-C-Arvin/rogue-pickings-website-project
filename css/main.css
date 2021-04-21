@@ -38,7 +38,9 @@ h3 {
 p {
 	font-size: 0.875em;
 	line-height: 21px;
-  padding: 0 30px;
+}
+ul {
+	margin: 0;
 }
 
 /*The widths are in a percentage!*/
@@ -64,7 +66,8 @@ header h1 span {
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 20px 0;
+	width: 100%;
 }
 header nav ul {
 	margin: 0;
@@ -76,9 +79,6 @@ header nav ul li {
 	font-size: 0.875em;
 	padding: 0 10px;
 	list-style: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -93,21 +93,14 @@ header nav ul li a{
 	align-items: center;
 	margin: 0 auto;
 	flex-flow: row wrap;
-	align-items: flex-start;
 }
 
-.main-image {
-
-}
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 	border-top: 3px solid #77a466;
 }
 
-.main-title {
-
-}
 .main-title h2 {
 	text-align: left;
 	padding: 5px 0;
@@ -128,11 +121,6 @@ header nav ul li a{
 
 .section-one h3 {
 	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
 }
 
 .section-two h3,
@@ -168,6 +156,7 @@ footer {
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	text-align: center;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
@@ -189,12 +178,10 @@ footer span {
 }
 	.section-two {
 		padding: 0 20px;
-	}
-	header nav ul {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		}
+}
 @media all and (min-width:1200px) {
   header {
 		justify-content: space-between;
@@ -206,10 +193,14 @@ footer span {
 		text-align: left;
 	}
 	header nav {
-		width: 40%;
+		width: 45%;
 	}
-	header nav ul {
+  header nav ul {
 		display: flex;
 		justify-content: space-between;
+	}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
 	}
 }
